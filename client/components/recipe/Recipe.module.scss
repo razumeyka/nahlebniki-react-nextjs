@@ -1,0 +1,76 @@
+@use "../../styles/variables" as variable;
+
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left-column {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 40px 60px 0 0;
+}
+
+.right-column {
+    box-sizing: border-box;
+    width: 400px;
+    padding-top: 380px;
+}
+
+.row-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0 0 15px;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 30px 0 20px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.category {
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: variable.$primary-color-dark;
+    font-size: 0.8rem;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.description {
+    box-sizing: border-box;
+    font-weight: 300;
+    line-height: 1.4;
+    padding-right: 100px;
+}
+
+.gallery {
+    width: 100%;
+    width: 600px;
+}
+
+.sticky-container {
+    width: 400px;
+    position: fixed;
+    top: 20px;
+    bottom: 20px;
+    right: calc((100% - 1280px)/2 + 40px);
+}
+
+.hidden-container {
+    display: none;
+}

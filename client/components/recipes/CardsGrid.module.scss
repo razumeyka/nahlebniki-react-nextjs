@@ -1,0 +1,57 @@
+@use "../../styles/variables" as variable;
+
+.container {
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.cards-container {
+    margin-bottom: 60px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.top-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 30px;
+    .heading {
+        margin: 0;
+    }
+    button {
+        max-width: 240px;
+    }
+}
+
+.filters {
+    margin-bottom: 15px;
+}
+
+.heading {
+    font-size: 2.2rem;
+    color: variable.$primary-text-color;
+    margin: 0 0 30px;
+}
+
+.link {
+    font-size: 1.2rem;
+    color: variable.$primary-color-dark;
+    text-decoration: underline;
+}
+
+.slider-container {
+    margin-left: calc((100% - 1280px)/2 + 40px);
+}
+
+.no-recipies {
+    display: flex;
+    align-items: center;
+    height: 378px;
+    span {
+        font-size: 2rem;
+        font-weight: 700;
+        color: variable.$divider-color;
+    }
+}

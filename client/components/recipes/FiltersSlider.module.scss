@@ -1,0 +1,28 @@
+@use "../../styles/variables" as variable;
+
+.filter-button {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    outline: 0;
+    border: 1px solid variable.$divider-color;
+    border-right: 0;
+    background: none;
+    font-size: 1rem;
+    color: variable.$primary-text-color;
+    padding: 8px 15px;
+    cursor: pointer;
+    &_active {
+        border: 1px solid variable.$primary-color-dark;
+        color: variable.$primary-color-dark;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.heading {
+    flex-shrink: 0;
+    margin-left: 7px;
+}

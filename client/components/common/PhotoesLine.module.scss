@@ -1,0 +1,42 @@
+.photoes-strip {
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+.photoes-strip__slider {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: absolute;
+    height: 200px;
+    // animation: translating 40s infinite linear;
+}
+
+.photoes-strip__slider_next {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: absolute;
+    height: 200px;
+    // animation: translating-next 40s infinite linear;
+}
+
+@keyframes translating {
+    from {
+        transform:translate(0)
+    }
+    to {
+        transform:translate(-100%)
+    }
+}
+
+@keyframes translating-next {
+    from {
+        transform:translate(100%)
+    }
+    to {
+        transform:translate(0)
+    }
+}

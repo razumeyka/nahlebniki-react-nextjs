@@ -1,0 +1,45 @@
+@use "../../styles/variables" as variable;
+
+.container {
+    box-sizing: border-box;
+    background: variable.$primary-color;
+    color: white;
+    padding: 40px 0 50px;
+    position: relative;
+}
+
+.heading {
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+.author {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1rem;
+    letter-spacing: 1.4px;
+    margin: 0 0 15px;
+}
+
+.country {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1rem;
+    margin: 0;
+}
+
+.photo {
+    box-sizing: border-box;
+    padding: 10px;
+    background: variable.$secondary-color;
+    transform: rotate(-3deg);
+    position: absolute;
+    right: calc((100% - 1280px)/2 + 30px);
+    top: 40px;
+    font-size: 0;
+}

@@ -1,0 +1,72 @@
+@use "../../styles/variables" as variable;
+
+.top-line {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 20px;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.serving {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid variable.$accent-color;
+    border-radius: 3px;
+    margin-left: 10px;
+    button {
+        width: 30px;
+        height: 30px;
+        box-sizing: border-box;
+        outline: none;
+        border: 0;
+        background: variable.$accent-color;
+        font-size: 1.2rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    &__title {
+        font-size: 0.9rem;
+        margin: 0 10px;
+    }
+}
+
+.ingredients {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &__group {
+        margin-bottom: 10px;
+    }
+    &__title {
+        font-size: 1.1rem;
+        font-weight: 300;
+        margin-bottom: 3px;
+    }
+    li {
+        font-size: 1rem;
+        font-weight: 300;
+        position: relative;
+        box-sizing: border-box;
+        padding: 5px 0 5px 30px;
+        &:before {
+            content: '';
+            box-sizing: border-box;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            background: variable.$primary-color-dark;
+            position: absolute;
+            left: 10px;
+            top: 3px;
+            bottom: 0;
+            margin: auto 0;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@use "../../styles/variables" as variable;
+
+.card {
+    position: relative;
+    cursor: pointer;
+}
+
+.heading {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    margin: 0 auto;
+    span {
+        display: inline-block;
+        box-sizing: border-box;
+        height: 30px;
+        background: variable.$secondary-color;
+        color: variable.$primary-text-color;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        padding: 0 20px;
+        margin: 0 auto;
+        transform: rotate(-3deg);
+    }
+}
