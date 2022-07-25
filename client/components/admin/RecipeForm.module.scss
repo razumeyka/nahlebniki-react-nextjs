@@ -1,0 +1,43 @@
+@use "../../styles/variables" as variable;
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    padding: 60px 0;
+    margin: auto;
+}
+
+.heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.subheading {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.add-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border-radius: 50%;
+    outline: 0;
+    border: 1px dashed #676F74;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: variable.$primary-color;
+    cursor: pointer;
+    margin: 0 auto;
+}

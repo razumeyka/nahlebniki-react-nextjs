@@ -1,0 +1,29 @@
+@use "../../styles/variables" as variable;
+
+.control {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.textarea {
+    width: 100%;
+    min-height: 150px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 15px 20px;
+    resize: vertical;
+    &:focus  {
+        border: 1px solid variable.$primary-color;
+    }
+}
+
+.message {
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: red;
+}

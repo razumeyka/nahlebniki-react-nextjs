@@ -1,0 +1,25 @@
+@use "./variables" as variable;
+
+.home-screen {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px 80px;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.heading {
+  font-size: 10rem;
+  text-transform: uppercase;
+  color: variable.$primary-color;
+  text-align: center;
+  cursor: pointer;
+}

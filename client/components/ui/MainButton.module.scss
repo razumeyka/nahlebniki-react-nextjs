@@ -1,0 +1,12 @@
+@use "../../styles/variables" as variable;
+
+.button {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    background: variable.$primary-color-dark;
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px 20px;
+}

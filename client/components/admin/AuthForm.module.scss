@@ -1,0 +1,20 @@
+@use "../../styles/variables" as variable;
+
+.container {
+    width: 100%;
+    max-width: 360px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
