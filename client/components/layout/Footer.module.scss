@@ -1,0 +1,9 @@
+@use "../../styles/variables" as variable;
+
+.container {
+    box-sizing: border-box;
+    background: variable.$primary-color-dark;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 90px;
+}
