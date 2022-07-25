@@ -1,0 +1,31 @@
+@use "./variables" as variable;
+
+
+.filters-swiper .swiper-slide {
+    width: 160px;
+    margin-left: -1px;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.recipes-swiper .swiper-wrapper {
+    padding-bottom: 15px;
+}
+
+.recipes-swiper .swiper-slide {
+    width: 360px;
+}
+
+.recipes-swiper .swiper-button-next, 
+.recipes-swiper .swiper-button-prev {
+    color: #fff;
+}
+
+.backstage-swiper .swiper-slide {
+    width: 180px;
+}
+
+.backstage-swiper .swiper-button-next, .backstage-swiper .swiper-button-prev {
+    color: variable.$secondary-color;
+}
